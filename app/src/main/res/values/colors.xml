@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#008577</color>
+    <color name="colorAccent">#c72a63</color>
+    <color name="textColor">#fff</color>
+    <color name="cardBackgroundColor">#757575</color>
+    <color name="floatingBtnTint">#33B5E5</color>
+    <color name="btnBlue">#33B5E5</color>
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:baselineAligned="false">
+
+
+        <!--  <Button
+            android:id="@+id/saveButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/design_default_color_primary"
+            android:onClick="saveEditButtonClick"
+            android:text="Save"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/qrCodeButton"
+            app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextFromNote"
+            app:layout_constraintVertical_bias="0.985" />
+
+            -->
+
+        <EditText
+            android:id="@+id/TitleFromNote"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="18dp"
+            android:background="@null"
+            android:fontFamily="serif-monospace"
+            android:maxLines="3"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/TextFromNote"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="18dp"
+            android:background="@null"
+            android:fontFamily="serif-monospace"
+            android:maxLines="6"
+            android:text="Text"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TitleFromNote" />
+
+
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/fabSpeedDialEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabDrawable="@drawable/ic_more"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/floating_edit_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="@color/floatingBtnTint"
+            app:miniFabTitleTextColor="@color/floatingBtnTint"
+
+            >
+
+        </io.github.yavski.fabspeeddial.FabSpeedDial>
+
+        <!--
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/design_default_color_primary"
+            android:onClick="editButtonClick"
+            android:text="Edit"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/qrCodeButton"
+            app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextFromNote"
+            app:layout_constraintVertical_bias="0.983" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="deleteButtonClick"
+            android:text="Delete"
+            app:layout_constraintBottom_toTopOf="@+id/qrCodeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/saveButton"
+            app:layout_constraintTop_toBottomOf="@+id/TextFromNote"
+            app:layout_constraintVertical_bias="0.983" />
+
+        <Button
+            android:id="@+id/qrCodeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="qrCodeClick"
+            android:text="Generate QR-CODE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextFromNote"
+            app:layout_constraintVertical_bias="0.978" />
+
+            -->
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

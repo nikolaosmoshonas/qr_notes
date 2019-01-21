@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nikos.myfirstapp">
+
+
+
+    <application
+        android:name=".Persistence"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_qr_launcher"
+        android:label="QR-Notes"
+        android:roundIcon="@mipmap/ic_qr_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        >
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity android:name=".CreateNoteActivity" />
+        <activity android:name=".ClickNoteActivity" />
+        <activity android:name=".QRCodeActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+</manifest>
